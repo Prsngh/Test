@@ -3,8 +3,8 @@ import requests
 import json
 import time
 
-nifi_url='http://172.25.40.134:9090'
-cs_id='e1495a25-0168-1000-0000-00000851f482'
+nifi_url='http://172.25.40.134:9090' # Enter the Nifi URL
+cs_id='e1495a25-0168-1000-0000-00000851f482' # Enter UID for Controller Service.
 base_url=nifi_url+'/nifi-api/controller-services/'+cs_id
 headers = {'Content-Type': 'application/json','Accept': '*/*'}
 ref_url=base_url+'/references'
